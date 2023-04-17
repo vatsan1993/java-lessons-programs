@@ -1,15 +1,19 @@
-// Author: S. Srivatsan
-// Version: 1.0
-// Description: A program that calculates the distance travelled by light in 1000 days.
-
 package ch1;
-
+// Description: A program that shows how to change values in variables.
 public class Chap1Ex10 {
     public static void main(String[] args) {
-        int lightspeed= 186000; // in miles/sec
-        int days= 1000;
-        long seconds= days * 24* 60* 60;
-        long distance= lightspeed *seconds;
-        System.out.println(distance);
+        String name= "Max";
+        int age= 20;
+        double salaryPerDay= 245.3;
+
+        name= "Bill";
+        age = age+1;
+        salaryPerDay= salaryPerDay+60;
+
+        System.out.println(name);
+        System.out.println(age);
+        System.out.println(salaryPerDay);
+
+
     }
 }

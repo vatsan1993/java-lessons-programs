@@ -1,20 +1,16 @@
 package ch1;
 
-// type promotion examples
+// Examples for string concatenation
 public class Chap1Ex9 {
     public static void main(String[] args) {
-        byte b= 20;
-        byte b2= 100;
-        int c= b*b2;
-        System.out.println(c);
+        String fname= "max";  // variable init.
+        String lname= "Winchester";
+        String fullName= fname+" "+lname;
+        int age= 20;
+        float marks= 99.9f;
+        System.out.println("The name of the person is: "+ fullName);
+        System.out.println(fullName+ " is "+ age+ " years old");
+        System.out.println(fullName+ " scored "+ marks+ " marks");
 
-
-        short sh=(short) (b*b2);
-        System.out.println(sh);
-
-        int i1= 1500000000;
-        int i2=250000000;
-        int i3= i1*i2;
-        System.out.println(i3);
     }
 }

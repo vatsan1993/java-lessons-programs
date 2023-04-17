@@ -1,19 +1,36 @@
 package ch1;
+// More examples for explicit typecasting.
 
-// conversion from strings to int, double.
 public class Chap1Ex7 {
     public static void main(String[] args) {
-        String strInt= "10";
-        int num1= Integer.parseInt(strInt);
-        System.out.println(num1);
+        double db= 143.2;
+        int value=(int) db;
+        System.out.println(value);
 
-        String strDouble= "11.3";
-        double dbl= Double.parseDouble(strDouble);
-        System.out.println(dbl);
+        float ft= 140.0f;
+        int value2= (int) ft;
+        System.out.println(value2);
+
+        int value3= 128;
+        byte bt1= (byte) value3;
+        System.out.println(bt1);
+
+        int value4= 270;
+        byte bt2= (byte) value4;
+        System.out.println(bt2);
+
+        int chrNum= 102;
+        char ch=(char) chrNum;
+        System.out.println(ch);
 
 
-        int i= Integer.parseInt(strDouble); // Exception
-        System.out.println(i);
+
+        // explicit
+        int i2= 100;
+        char ch3= (char) i2;
+        System.out.println(ch3);
+
+
 
     }
 }

@@ -1,16 +1,19 @@
 package ch1;
 
-// Examples for string concatenation
+// conversion from strings to int, double.
 public class Chap1Ex8 {
     public static void main(String[] args) {
-        String fname= "max";  // variable init.
-        String lname= "Winchester";
-        String fullName= fname+" "+lname;
-        int age= 20;
-        float marks= 99.9f;
-        System.out.println("The name of the person is: "+ fullName);
-        System.out.println(fullName+ " is "+ age+ " years old");
-        System.out.println(fullName+ " scored "+ marks+ " marks");
+        String strInt= "10";
+        int num1= Integer.parseInt(strInt);
+        System.out.println(num1);
+
+        String strDouble= "11.3";
+        double dbl= Double.parseDouble(strDouble);
+        System.out.println(dbl);
+
+
+        int i= Integer.parseInt(strDouble); // Exception
+        System.out.println(i);
 
     }
 }

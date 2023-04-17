@@ -1,14 +1,14 @@
 package ch1;
 
 // This program shows the problems you will get while working with different datatypes
-public class CHap1Ex3 {
+public class  CHap1Ex3 {
     public static void main(String[] args) {
-//        byte b = 130;
-//        short sh= 40000;
-//        int i= 5000000000;
-//        long l= 5000000000;
-//        long l2= 500000000L; // no error here
-//        String s= ‘kjasdhf1’;
+//        byte byteWithInvalidValue = 130;  // byte range is -128 to 127
+//        short shortWithInvalidValue = 40000; // short ranges from -32768 to 32767
+//        int intWithInvalidValue = 3000000000; // too large number
+//        Long longWithInvalidValue = 3000000000;
+//
+//        float floatWithInvalidValue= 5.23533433544353434;
 
     }
 }

@@ -1,22 +1,22 @@
 package ch1;
-// Example for BufferedReader with InputStreamReader.
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
+// Description: A program that shows assignment operators
 public class Chap1Ex12 {
-    public static void main(String[] args) throws IOException {
-        BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
-        System.out.print("Enter your name: ");
-        String name= br.readLine();
+    public static void main(String[] args) {
+        int a= 10;
+        int b= 20;
 
-        System.out.print("Enter your age: ");
-        int age= Integer.parseInt(br.readLine());
-
-        System.out.print("Enter your marks: ");
-        double marks= Double.parseDouble(br.readLine());
-
-        System.out.println(name+ " is "+ age+ " years old");
-        System.out.println(name+ " scored "+ marks+ " marks");
+        // permanent
+        a+=b; // increasing a value by b value
+        System.out.println(a);
+        a+=10;
+        System.out.println(a);
+        a*=5;
+        System.out.println(a);
+        a-=1;
+        System.out.println(a);
+        a/=2; // both a and 2 are int so we get 99
+        System.out.println(a);
+        a%=2;
+        System.out.println(a);
     }
 }
